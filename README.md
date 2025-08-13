@@ -1,4 +1,8 @@
-# ☬ veerjilang — Punjabi Custom Programming Language
+# ☬ veerjilang
+
+---
+
+Punjabi Custom Programming Language
 
 ## 📖 What & Why
 I built **veerjilang** as a learning project while studying how compilers work — from **lexing → parsing → code generation**.  
