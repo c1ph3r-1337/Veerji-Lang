@@ -1,6 +1,6 @@
 # <p align="center">VEERJILANG</p>
 
-# 📖 What & Why
+## 📖 What & Why
 I built **veerjilang** as a learning project while studying how compilers work — from **lexing → parsing → code generation**.  
 I wanted to create something meaningful and fun, so I designed a **custom compiler for Punjabi syntax**, powered by a multi-stage C compiler that outputs **x86-64 NASM assembly**.  
 
