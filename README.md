@@ -1,6 +1,6 @@
-# <p align="center">VEERJILANG</p>
+# <p align="center">VEERJILANG</p>Punjabi Custom Programming Language
 
-Punjabi Custom Programming Language
+
 
 ## 📖 What & Why
 I built **veerjilang** as a learning project while studying how compilers work — from **lexing → parsing → code generation**.  
