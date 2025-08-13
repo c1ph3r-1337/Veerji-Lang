@@ -142,4 +142,4 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ---
 
-Enjoy your very own Cloud-based Network Storage (NAS) built by **c1ph3r-1337**! 😎👍
+Enjoy your very own Punjabi-based custom programming language and compiler built by c1ph3r-1337! ☬💻🔥
