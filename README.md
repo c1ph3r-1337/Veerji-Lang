@@ -1,6 +1,4 @@
-# ☬ veerjilang
-
----
+# <p align="center">VEERJILANG</p>
 
 Punjabi Custom Programming Language
 
