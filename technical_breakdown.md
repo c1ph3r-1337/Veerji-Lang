@@ -328,12 +328,29 @@ ld -o out out.o
 
 ## 8) Quick Reference — File by File
 
-### `main.c`
+**`main.c`**  
+- Orchestrates: **read → tokenize → parse → codegen**.  
+- Reports lexical/parser errors with file/line context.  
+- Frees all dynamically allocated memory at the end.  
+- Writes generated assembly to `out.s` and calls the assembler (`nasm`) + linker (`ld`).  
 
-* Orchestrates **read → tokenize → parse → codegen**
-* Reports errors; frees resources; writes `out.s`
+**`lexer.c`**  
+- Produces `Token[]` with types: `TOKEN_PRINT`, `TOKEN_STRING`, `TOKEN_NEWLINE`, `TOKEN_EOF`.  
+- Handles **UTF-8 Punjabi keywords** (`ਲਿਖੋ`, `☬`) by matching byte sequences.  
+- Extracts strings between quotes, preserving Unicode characters.  
+- Skips whitespace and handles `\n` as a separate token.  
 
-### `lexer.c`
+**`parser.c`**  
+- Consumes tokens and builds a **Statement[]** array.  
+- Recognizes `ਲਿਖੋ "<text>"` pattern as `STMT_PRINT` node.  
+- Validates syntax: ensures `TOKEN_STRING` follows `TOKEN_PRINT`.  
+- Stops on `TOKEN_EOF`, ready for code generation.  
 
-* Produces `Token[]` with `TOKEN_PRINT`, `TOKEN_STRING`, `TOKEN_NEWLINE`, `TOKEN_EOF`
-* Handles UTF‑8 Punjabi keywords (`ਲਿਖੋ` / `☬`) and
+**`codegen.c`**  
+- Emits **x86_64 NASM assembly** using Linux syscalls (`write`, `exit`).  
+- For `STMT_PRINT`, loads string into `.data` section, generates code to print it.  
+- Aligns data properly for Linux ELF format.  
+- Writes to file `out.s` for `nasm` → `ld` → final executable.  
+
+---
+
