@@ -137,22 +137,9 @@ This project is licensed under the MIT License — see LICENSE for details.
 
 ---
 
-## **LICENSE** (MIT Example)
-```text
-MIT License
-
-Copyright (c) 2025 vortoxin
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-[... standard MIT text continues ...]
+## License 📝
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
-If you want, I can also add a **section showing the full compiler pipeline visually** so people can see `veerji` → tokens → AST → assembly → binary → output. That would make the README much cooler and educational.
-
+Enjoy your very own Cloud-based Network Storage (NAS) built by **c1ph3r-1337**! 😎👍
