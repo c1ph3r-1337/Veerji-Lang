@@ -1,5 +1,8 @@
 # <p align="center">VEERJILANG</p>
 
+<img width="558" height="139" alt="image" src="https://github.com/user-attachments/assets/6f037113-663c-4883-9338-c4d2f71f73ca" />
+
+
 ## 📖 What & Why
 I built **veerjilang** as a learning project while studying how compilers work — from **lexing → parsing → code generation**.  
 I wanted to create something meaningful and fun, so I designed a **custom compiler for Punjabi syntax**, powered by a multi-stage C compiler that outputs **x86-64 NASM assembly**.  
